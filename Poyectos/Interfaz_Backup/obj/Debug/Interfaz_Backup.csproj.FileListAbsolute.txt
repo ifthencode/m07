@@ -1,0 +1,16 @@
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\bin\Debug\Interfaz_Incidencias.exe.config
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\bin\Debug\Interfaz_Incidencias.exe
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\bin\Debug\Interfaz_Incidencias.pdb
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Backup.csprojAssemblyReference.cache
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Incidencias.FiltrarIncidencias.resources
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Incidencias.ModificarIncidencia.resources
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Incidencias.Incidencias.resources
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Incidencias.Properties.Resources.resources
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Backup.csproj.GenerateResource.cache
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Backup.csproj.CoreCompileInputs.cache
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Incidencias.exe
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Incidencias.pdb
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Incidencias.Configuraciones.resources
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Incidencias.Form1.resources
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Backup.Backup.resources
+E:\Curso2021\m07\Poyectos\Interfaz_Backup\obj\Debug\Interfaz_Backup.Form1.resources
