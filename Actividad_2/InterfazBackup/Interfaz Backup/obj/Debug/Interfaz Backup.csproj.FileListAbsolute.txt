@@ -1,0 +1,11 @@
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\bin\Debug\Interfaz Backup.exe.config
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\bin\Debug\Interfaz Backup.exe
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\bin\Debug\Interfaz Backup.pdb
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\obj\Debug\Interfaz Backup.csprojAssemblyReference.cache
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\obj\Debug\Interfaz_Backup.Configuraciones.resources
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\obj\Debug\Interfaz_Backup.PantallaPrincipal.resources
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\obj\Debug\Interfaz_Backup.Properties.Resources.resources
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\obj\Debug\Interfaz Backup.csproj.GenerateResource.cache
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\obj\Debug\Interfaz Backup.csproj.CoreCompileInputs.cache
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\obj\Debug\Interfaz Backup.exe
+E:\Curso2021\m07\Poyectos\InterfazBackup\Interfaz Backup\obj\Debug\Interfaz Backup.pdb
