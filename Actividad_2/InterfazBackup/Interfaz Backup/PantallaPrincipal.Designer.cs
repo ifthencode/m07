@@ -48,13 +48,18 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edicionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configuracionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btDestino = new System.Windows.Forms.Button();
-            this.configuraciones = new System.Windows.Forms.Button();
             this.gbSeltipoEle = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.rbfichero = new System.Windows.Forms.RadioButton();
             this.rbCarpeta = new System.Windows.Forms.RadioButton();
+            this.configuraciones = new System.Windows.Forms.Button();
+            this.btDestino = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -63,6 +68,8 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.gbSeltipoEle.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbtipo
@@ -96,7 +103,7 @@
             this.tableLayoutPanel2.Controls.Add(this.lbFecha, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.lbtipo, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.lbtiposel, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(575, 306);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(579, 378);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.89916F));
@@ -201,7 +208,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btGuardar, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.elemento_seleccionado, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelseleccionado, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 306);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 378);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -231,10 +238,9 @@
             this.flowLayoutPanel2.BackColor = System.Drawing.SystemColors.Control;
             this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel3);
-            this.flowLayoutPanel2.Controls.Add(this.tableLayoutPanel3);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(6, 5);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1139, 300);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1132, 41);
             this.flowLayoutPanel2.TabIndex = 9;
             // 
             // flowLayoutPanel3
@@ -243,17 +249,18 @@
             this.flowLayoutPanel3.Controls.Add(this.menuStrip1);
             this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1111, 27);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1021, 32);
             this.flowLayoutPanel3.TabIndex = 3;
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem});
+            this.archivoToolStripMenuItem,
+            this.edicionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(66, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(124, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuPantallaPrincipal";
             // 
@@ -270,9 +277,26 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.D6)));
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Text = "&Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click_1);
+            // 
+            // edicionToolStripMenuItem
+            // 
+            this.edicionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configuracionesToolStripMenuItem});
+            this.edicionToolStripMenuItem.Name = "edicionToolStripMenuItem";
+            this.edicionToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.edicionToolStripMenuItem.Text = "&Edicion";
+            // 
+            // configuracionesToolStripMenuItem
+            // 
+            this.configuracionesToolStripMenuItem.Name = "configuracionesToolStripMenuItem";
+            this.configuracionesToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.configuracionesToolStripMenuItem.Text = "&Configuraciones";
+            this.configuracionesToolStripMenuItem.Click += new System.EventHandler(this.configuracionesToolStripMenuItem_Click_1);
             // 
             // tableLayoutPanel3
             // 
@@ -282,34 +306,14 @@
             this.tableLayoutPanel3.Controls.Add(this.gbSeltipoEle, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.configuraciones, 1, 2);
             this.tableLayoutPanel3.Controls.Add(this.btDestino, 0, 2);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 36);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(7, 99);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.63731F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.36269F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1113, 263);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1131, 263);
             this.tableLayoutPanel3.TabIndex = 4;
-            // 
-            // btDestino
-            // 
-            this.btDestino.Location = new System.Drawing.Point(3, 196);
-            this.btDestino.Name = "btDestino";
-            this.btDestino.Size = new System.Drawing.Size(550, 44);
-            this.btDestino.TabIndex = 5;
-            this.btDestino.Text = "Seleccionar Directorio Destino";
-            this.btDestino.UseVisualStyleBackColor = true;
-            this.btDestino.Click += new System.EventHandler(this.btDestino_Click);
-            // 
-            // configuraciones
-            // 
-            this.configuraciones.Location = new System.Drawing.Point(559, 196);
-            this.configuraciones.Name = "configuraciones";
-            this.configuraciones.Size = new System.Drawing.Size(499, 44);
-            this.configuraciones.TabIndex = 6;
-            this.configuraciones.Text = "Configuraciones";
-            this.configuraciones.UseVisualStyleBackColor = true;
-            this.configuraciones.Click += new System.EventHandler(this.configuraciones_Click_1);
             // 
             // gbSeltipoEle
             // 
@@ -361,12 +365,66 @@
             this.rbCarpeta.UseVisualStyleBackColor = true;
             this.rbCarpeta.CheckedChanged += new System.EventHandler(this.rbCarpeta_CheckedChanged);
             // 
+            // configuraciones
+            // 
+            this.configuraciones.Location = new System.Drawing.Point(569, 196);
+            this.configuraciones.Name = "configuraciones";
+            this.configuraciones.Size = new System.Drawing.Size(499, 44);
+            this.configuraciones.TabIndex = 6;
+            this.configuraciones.Text = "Configuraciones";
+            this.configuraciones.UseVisualStyleBackColor = true;
+            this.configuraciones.Click += new System.EventHandler(this.configuraciones_Click_1);
+            // 
+            // btDestino
+            // 
+            this.btDestino.Location = new System.Drawing.Point(3, 196);
+            this.btDestino.Name = "btDestino";
+            this.btDestino.Size = new System.Drawing.Size(550, 44);
+            this.btDestino.TabIndex = 5;
+            this.btDestino.Text = "Seleccionar Directorio Destino";
+            this.btDestino.UseVisualStyleBackColor = true;
+            this.btDestino.Click += new System.EventHandler(this.btDestino_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel1.Controls.Add(this.toolStrip1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 48);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1133, 45);
+            this.flowLayoutPanel1.TabIndex = 10;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(52, 33);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.AutoSize = false;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::Interfaz_Backup.Properties.Resources._53344360_signo_icono_salir_salir_botón_;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(40, 30);
+            this.toolStripButton1.Text = "Salir";
+            this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.toolStripButton1.ToolTipText = "Salir(Ctrl+Alt+6)";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // PantallaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1144, 489);
+            this.ClientSize = new System.Drawing.Size(1144, 561);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -383,6 +441,10 @@
             this.gbSeltipoEle.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -415,6 +477,11 @@
         private System.Windows.Forms.RadioButton rbfichero;
         private System.Windows.Forms.RadioButton rbCarpeta;
         private System.Windows.Forms.GroupBox gbSeltipoEle;
+        private System.Windows.Forms.ToolStripMenuItem edicionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configuracionesToolStripMenuItem;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 

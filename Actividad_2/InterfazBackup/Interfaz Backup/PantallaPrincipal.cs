@@ -17,11 +17,17 @@ namespace Interfaz_Backup
             InitializeComponent();
         }
 
-       
+        private void configuracionesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Configuraciones cf = new Configuraciones(lbtiposel, lbFechaSel, lbPeriocidad);
+            cf.Show();
+
+        }
+
 
         private void configuraciones_Click(object sender, EventArgs e)
         {
-
+         
         }
 
         
@@ -74,10 +80,10 @@ namespace Interfaz_Backup
         private void rbfichero_CheckedChanged(object sender, EventArgs e)
         {
             if (rbfichero.Checked == true) {
-                seleccionar_carpeta.Text = "Seleccionar Fichero";
+                seleccionar_carpeta.Text = "Seleccionar Fichero a Respaldar";
                 seleccionar_carpeta.Visible = true;
             } else if (rbCarpeta.Checked==true) {
-                seleccionar_carpeta.Text = "Seleccionar Directorio";
+                seleccionar_carpeta.Text = "Seleccionar Directorio a Respaldar";
                 seleccionar_carpeta.Visible = true;
             }
         }
@@ -155,14 +161,20 @@ namespace Interfaz_Backup
         {
             if (rbfichero.Checked == true)
             {
-                seleccionar_carpeta.Text = "Seleccionar Fichero";
+                seleccionar_carpeta.Text = "Seleccionar Fichero a respaldar";
                 seleccionar_carpeta.Visible = true;
             }
             else if (rbCarpeta.Checked == true)
             {
-                seleccionar_carpeta.Text = "Seleccionar Directorio";
+                seleccionar_carpeta.Text = "Seleccionar Directorio a respaldar";
                 seleccionar_carpeta.Visible = true;
             }
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
